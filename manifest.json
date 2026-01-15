@@ -1,0 +1,11 @@
+{
+  "namespace": "sappykun",
+  "name": "MainMenuDeclutter",
+  "description": "Removes stuff from the main menu.",
+  "version_number": "1.0.0",
+  "dependencies": [
+    "BepInEx-BepInExPack_PEAK-5.4.2403"
+  ],
+  "website_url": "https://github.com/sappykun/PEAK-MainMenuDeclutter",
+  "FullName": "sappykun.PEAK_MainMenuDeclutter"
+}

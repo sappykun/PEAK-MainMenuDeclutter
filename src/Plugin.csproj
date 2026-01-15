@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>MainMenuDeclutter</AssemblyName>
+    <AssemblyTitle>MainMenuDeclutter</AssemblyTitle>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="10.0.0" />
+  </ItemGroup>
+
+</Project>
