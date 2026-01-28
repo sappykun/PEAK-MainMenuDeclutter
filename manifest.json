@@ -2,7 +2,7 @@
   "namespace": "sappykun",
   "name": "MainMenuDeclutter",
   "description": "Removes stuff from the main menu.",
-  "version_number": "1.0.0",
+  "version_number": "1.1.0",
   "dependencies": [
     "BepInEx-BepInExPack_PEAK-5.4.2403"
   ],
