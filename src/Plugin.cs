@@ -4,7 +4,7 @@ using BepInEx.Logging;
 using HarmonyLib;
 using UnityEngine;
 
-[BepInPlugin("sappykun.PEAK_MainMenuDeclutter", "PEAK Main Menu Declutter", "1.0.0")]
+[BepInPlugin("sappykun.PEAK_MainMenuDeclutter", "PEAK Main Menu Declutter", "1.1.0")]
 public partial class Plugin : BaseUnityPlugin
 {
 	internal static ManualLogSource? Log;
@@ -37,25 +37,25 @@ public partial class Plugin : BaseUnityPlugin
 		{
 			if (BlockStoreButtons is { Value: true })
 			{
-				GameObject.Find("Button_FG").SetActive(false);
-				GameObject.Find("Button_YT").SetActive(false);
-				GameObject.Find("Button_MM").SetActive(false);
+				GameObject.Find("Button_FG")?.SetActive(false);
+				GameObject.Find("Button_YT")?.SetActive(false);
+				GameObject.Find("Button_MM")?.SetActive(false);
 			}
 			
 			if (BlockDeveloperButtons is { Value: true })
 			{
-				__instance.landfallButton.gameObject.SetActive(false);
-				__instance.aggrocrabButton.gameObject.SetActive(false);
+				__instance.landfallButton?.gameObject?.SetActive(false);
+				__instance.aggrocrabButton?.gameObject?.SetActive(false);
 			}
 			
 			if (BlockDiscordButton is { Value: true })
-				__instance.discordButton.gameObject.SetActive(false);
+				__instance.discordButton?.gameObject?.SetActive(false);
 
 			if (BlockSpeechBubble is { Value: true })
-				GameObject.Find("DevMessages").SetActive(false);
+				GameObject.Find("DevMessages")?.SetActive(false);
 
 			if (BlockCreditsButton is { Value: true })
-				__instance.creditsButton.gameObject.SetActive(false);
+				__instance.creditsButton?.gameObject?.SetActive(false);
 		}
 	}
 } 
